@@ -5,17 +5,14 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>
-        <Link to="/">
-          <img
-            src="/assets/logo.png" 
+      
+      <nav className={styles.nav}>
+        <ul className={styles.navList}>
+        <img
+            src="/apple.png" 
             alt="Logo"
             className={styles.logoImage}
           />
-        </Link>
-      </div>
-      <nav className={styles.nav}>
-        <ul className={styles.navList}>
           <li className={styles.navItem}>
             <Link to="/store">Store</Link>
           </li>
@@ -46,6 +43,16 @@ const Header = () => {
           <li className={styles.navItem}>
             <Link to="/support">Support</Link>
           </li>
+          <img
+            src="/assets/logo.png" 
+            alt="Logo"
+            className={styles.logoImage}
+          />
+          <img
+            src="/assets/logo.png" 
+            alt="Logo"
+            className={styles.logoImage}
+          />
         </ul>
       </nav>
     </header>
