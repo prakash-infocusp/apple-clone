@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
+import appleLogo from './images/apple.png'; 
+import search from './images/search.png';
 
 const Header = () => {
   return (
@@ -9,7 +11,9 @@ const Header = () => {
       <nav className={styles.nav}>
         <ul className={styles.navList}>
         <img
-            src="/apple.png" 
+            src={appleLogo}
+            width={16} 
+            height={16}
             alt="Logo"
             className={styles.logoImage}
           />
@@ -43,16 +47,13 @@ const Header = () => {
           <li className={styles.navItem}>
             <Link to="/support">Support</Link>
           </li>
+        
           <img
-            src="/assets/logo.png" 
-            alt="Logo"
-            className={styles.logoImage}
-          />
-          <img
-            src="/assets/logo.png" 
-            alt="Logo"
-            className={styles.logoImage}
-          />
+          src={search}
+          width={18}
+          alt="Logo"
+          className={styles.logoImage}
+        />
         </ul>
       </nav>
     </header>
