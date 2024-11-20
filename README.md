@@ -1,8 +1,4 @@
-# React + Vite
+# React + Vite + React Router
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React-based clone of Apple's website, replicating the Main Landing Page and the TV & Home Page. The design is inspired by Apple's official website and is intended to closely mirror its appearance and functionality.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
