@@ -1,10 +1,9 @@
-
-.container{
-  width: 100vw; 
+.container {
+  width: 100vw;
 }
 
-.notificationContainer{
-  width: 100vw; 
+.notificationContainer {
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,316 +13,186 @@
   font-size: 14px;
 }
 
-.sectionOne {
+.sectionOne,
+.sectionTwo,
+.sectionThree,
+.sectionFour .leftContainer,
+.sectionFour .rightContainer,
+.sectionFive .leftContainer,
+.sectionFive .rightContainer,
+.sectionSix .leftContainer,
+.sectionSix .rightContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
   padding: 40px 20px;
-  background-image: url("https://www.apple.com/in/home/heroes/iphone-16-pro/images/hero_iphone16pro_avail__fnf0f9x70jiy_medium.jpg");
   background-repeat: no-repeat;
-  background-position: center; 
-  background-size: cover; 
-  height: 600px; 
+  background-position: center;
+  background-size: cover;
 }
 
+.sectionOne {
+  background-image: url("https://www.apple.com/in/home/heroes/iphone-16-pro/images/hero_iphone16pro_avail__fnf0f9x70jiy_medium.jpg");
+  height: 600px;
+}
 
-.buttonContainer{
-  position: absolute;
-  bottom:20px;
+.sectionTwo {
+  background-image: url("https://www.apple.com/in/home/heroes/iphone-16/images/hero_iphone16_avail__euwzls69btea_medium.jpg");
+  height: 600px;
+}
+
+.sectionThree {
+  background-image: url("https://www.apple.com/v/home/bu/images/heroes/macbook-pro-enhanced/hero_macbookpro_announce__f7vm5bnswsae_medium.jpg");
+  height: 600px;
+}
+
+.sectionThree .headingContainer .buttonRow {
+  margin-top: 20px;
+}
+
+.sectionFour {
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+
+.sectionFour .leftContainer {
+  width: 49.5%;
+  background-image: url("https://www.apple.com/v/home/bu/images/promos/apple-watch-series-10/promo_apple_watch_series_10_avail__b9etp10v9tn6_large.jpg");
+}
+
+.sectionFour .rightContainer {
+  width: 49.5%;
+  background-image: url("https://www.apple.com/v/home/bu/images/promos/airpods-4/promo_airpods_4_avail__bl22kvpg6ez6_large.jpg");
+  height: 600px;
+}
+
+.sectionFive,
+.sectionSix {
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+
+.sectionSix{
+  padding-bottom: 10px;
+}
+
+.sectionFive .leftContainer {
+  width: 49.5%;
+  background-image: url("https://www.apple.com/in/home/images/promos/mac-mini/promo_macmini_announce__bwha5fjvaioi_large.jpg");
+}
+
+.sectionFive .rightContainer {
+  width: 49.5%;
+  background-image: url("https://www.apple.com/v/home/bu/images/promos/imac/promo_imac_announce__f4qdil7mfmeu_large.jpg");
+  height: 600px;
+}
+
+.sectionSix .leftContainer {
+  width: 49.5%;
+  background-image: url("https://www.apple.com/v/home/bu/images/promos/ipad-mini/promo_ipad_mini__spq4zjcuuaie_large.jpg");
+}
+
+.sectionSix .rightContainer {
+  width: 49.5%;
+  background-image: url("https://www.apple.com/v/home/bu/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_large.jpg");
+  height: 600px;
+}
+
+.headingContainer,
+.content,
+.textContainer,
+.bottomText {
   display: flex;
   flex-direction: column;
-  padding :20px;
   justify-content: center;
-  align-items:center;
+  align-items: center;
+  position: absolute;
 }
 
-.buttonRow{
+.headingContainer {
+  top: 20px;
+  padding: 20px;
+}
+
+.content {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sectionFour .leftContainer .content,
+.sectionSix .leftContainer .content,
+.sectionSix .rightContainer .content,
+.sectionFive .leftContainer .content,
+.sectionFive .rightContainer .content {
+  top: 50px;
+}
+
+.sectionFour .rightContainer .content {
+  bottom: 50px;
+}
+
+.textContainer {
+  bottom: 20px;
+}
+
+.bottomText {
+  bottom: 30px;
+}
+
+.buttonContainer,
+.sectionFour .buttonRow,
+.sectionFive .buttonRow,
+.sectionSix .buttonRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 20px;
+  padding: 20px;
+}
+
+.buttonRow {
   display: flex;
   margin-bottom: 10px;
 }
 
-.headingContainer{
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top:20px;
-  display: flex;
-  padding :20px;
-  justify-content: center;
-  align-items: center;
-}
-
-.buttonMargin{
+.buttonMargin {
   margin-right: 20px;
 }
 
-.imageStyle{
-  height: 300px;
-  width: auto;
-}
-
-.shopLink{
-  color: #0071e3;
-  margin-left: 5px;
-  cursor: pointer;
-}
-.shopLink:hover{
-  text-decoration: underline;
-}
-
-
-.sectionTwo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  padding: 40px 20px;
-  background-image: url("https://www.apple.com/in/home/heroes/iphone-16/images/hero_iphone16_avail__euwzls69btea_medium.jpg");
-  background-repeat: no-repeat;
-  background-position: center; 
-  background-size: cover; 
-  height: 600px; 
-}
-
-.sectionThree {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  padding: 40px 20px;
-  background-image: url("https://www.apple.com/v/home/bu/images/heroes/macbook-pro-enhanced/hero_macbookpro_announce__f7vm5bnswsae_medium.jpg");
-  background-repeat: no-repeat;
-  background-position: center; 
-  background-size: cover; 
-  height: 600px; 
-}
-
-.sectionThree .headingContainer .buttonRow{
-  margin-top: 20px;
-}
-
-.sectionThree .textContainer{
-  position: absolute;
-  bottom:20px;
-  display: flex;
-  flex-direction: column;
-  padding :20px;
-  justify-content: center;
-  align-items:center;
-}
-
-.gradientText{
-  background: linear-gradient(94deg, #0090F7, #BA62FC, #F2416B, #F55600);
+.gradientText,
+.sectionFive .gradientText {
+  background: linear-gradient(94deg, #0090f7, #ba62fc, #f2416b, #f55600);
   background-clip: text;
   color: transparent;
+}
+
+.gradientText {
   font-size: 21px;
   line-height: 35px;
 }
 
-.sectionFour{
-  display: flex;
-  padding: 10px;
-  justify-content: space-between;
-}
-
-.sectionFour .leftContainer{
-  width: 49.5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  padding: 40px 20px;
-  background-image: url("https://www.apple.com/v/home/bu/images/promos/apple-watch-series-10/promo_apple_watch_series_10_avail__b9etp10v9tn6_large.jpg");
-  background-repeat: no-repeat;
-  background-position: center; 
-  background-size: cover; 
-}
-
-.sectionFour .buttonRow{
-  margin-top:20px;
-}
-
-.sectionFour .rightContainer{
-  width: 49.5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  padding: 40px 20px;
-  background-image: url("https://www.apple.com/v/home/bu/images/promos/airpods-4/promo_airpods_4_avail__bl22kvpg6ez6_large.jpg");
-  background-repeat: no-repeat;
-  background-position: center; 
-  background-size: cover; 
-  height: 600px; 
-}
-
-.sectionFour .leftContainer .content{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  top :50px
-}
-
-.sectionFour .rightContainer .content{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  bottom :50px
-}
-
-.sectionFive{
-  display: flex;
-  padding: 10px;
-  justify-content: space-between;
-
-}
-
-.sectionFive .leftContainer{
-  width: 49.5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  padding: 40px 20px;
-  background-image: url("https://www.apple.com/in/home/images/promos/mac-mini/promo_macmini_announce__bwha5fjvaioi_large.jpg");
-  background-repeat: no-repeat;
-  background-position: center; 
-  background-size: cover; 
-}
-
-.sectionFive .buttonRow{
-  margin-top:20px;
-}
-
-.sectionFive .rightContainer{
-  width: 49.5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  padding: 40px 20px;
-  background-image: url("https://www.apple.com/v/home/bu/images/promos/imac/promo_imac_announce__f4qdil7mfmeu_large.jpg");
-  background-repeat: no-repeat;
-  background-position: center; 
-  background-size: cover; 
-  height: 600px; 
-}
-
-.sectionFive .leftContainer .content{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  top :50px
-}
-
-.sectionFive .rightContainer .content{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  top :50px
-}
-
-.sectionFive .bottomText{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  bottom :30px;
-}
-
-.sectionFive .gradientText{
-  background: linear-gradient(94deg, #0090F7, #BA62FC, #F2416B, #F55600);
-  background-clip: text;
-  color: transparent;
+.sectionFive .gradientText {
   font-size: 14px;
 }
 
-
-.sectionSix{
-  display: flex;
-  padding: 10px;
-  justify-content: space-between;
-
+.shopLink {
+  color: #0071e3;
+  margin-left: 5px;
+  cursor: pointer;
 }
 
-.sectionSix .leftContainer{
-  width: 49.5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  padding: 40px 20px;
-  background-image: url("https://www.apple.com/v/home/bu/images/promos/ipad-mini/promo_ipad_mini__spq4zjcuuaie_large.jpg");
-  background-repeat: no-repeat;
-  background-position: center; 
-  background-size: cover; 
+.shopLink:hover {
+  text-decoration: underline;
 }
-
-.sectionSix .buttonRow{
-  margin-top:20px;
-}
-
-.sectionSix .rightContainer{
-  width: 49.5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  padding: 40px 20px;
-  background-image: url("https://www.apple.com/v/home/bu/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_large.jpg");
-  background-repeat: no-repeat;
-  background-position: center; 
-  background-size: cover; 
-  height: 600px; 
-}
-
-.sectionSix .leftContainer .content{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  top :50px
-}
-
-.sectionSix .rightContainer .content{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  top :50px
-}
-
-.sectionSix .bottomText{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  bottom :30px;
-}
-
-
-
-
-

@@ -92,10 +92,10 @@ a {
 .bottomLinks {
   display: flex;
   justify-content: flex-start;
-  
 }
 
-.bottomMenuItem , .copyrightText{
+.bottomMenuItem,
+.copyrightText {
   font-size: 13px;
   display: block;
   pointer-events: auto;
@@ -109,6 +109,6 @@ a {
   justify-content: flex-start;
 }
 
-.copyrightText{
-    margin-right: 35px;
+.copyrightText {
+  margin-right: 35px;
 }

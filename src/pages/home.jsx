@@ -1,7 +1,6 @@
 import Heading from "../../components/Heading";
 import Button from "../../components/Button";
 import styles from "./home.module.css";
-import heroImage from "./images/hero-image-one.jpg";
 
 function Home() {
   return (
