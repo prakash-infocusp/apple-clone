@@ -1,22 +1,24 @@
 import React from "react";
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
-import appleLogo from './images/apple.png'; 
-import search from './images/search.png';
+import appleLogo from "./images/apple.png";
+import search from "./images/search.png";
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      
       <nav className={styles.nav}>
         <ul className={styles.navList}>
-        <img
-            src={appleLogo}
-            width={16} 
-            height={16}
-            alt="Logo"
-            className={styles.logoImage}
-          />
+          <Link to="/">
+            <img
+              src={appleLogo}
+              width={16}
+              height={16}
+              alt="Logo"
+              className={styles.logoImage}
+            />
+          </Link>
+
           <li className={styles.navItem}>
             <Link to="/store">Store</Link>
           </li>
@@ -47,13 +49,13 @@ const Header = () => {
           <li className={styles.navItem}>
             <Link to="/support">Support</Link>
           </li>
-        
+
           <img
-          src={search}
-          width={18}
-          alt="Logo"
-          className={styles.logoImage}
-        />
+            src={search}
+            width={18}
+            alt="Logo"
+            className={styles.logoImage}
+          />
         </ul>
       </nav>
     </header>
