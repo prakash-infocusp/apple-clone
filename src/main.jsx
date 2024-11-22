@@ -1,19 +1,19 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import './index.css';
-import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
-import Home from './pages/home.jsx';
-import TVHOME from './pages/tv-home';
-import Header from '../components/Header.jsx';
-import Footer from '../components/Footer.jsx';
-import UnderConstructionPage from "./pages/under-construction-page.jsx"
+import Home from "./pages/home.jsx";
+import TVHOME from "./pages/tv-home";
+import Header from "../components/Header.jsx";
+import Footer from "../components/Footer.jsx";
+import UnderConstructionPage from "./pages/under-construction-page.jsx";
 
 const Layout = () => (
   <>
     <Header />
     <main>
-      <Outlet /> 
+      <Outlet />
     </main>
     <Footer />
   </>
@@ -31,16 +31,27 @@ const router = createBrowserRouter([
       { path: "/ipad", element: <UnderConstructionPage pageName="iPad" /> },
       { path: "/iphone", element: <UnderConstructionPage pageName="iPhone" /> },
       { path: "/watch", element: <UnderConstructionPage pageName="Watch" /> },
-      { path: "/airpods", element: <UnderConstructionPage pageName="AirPods" /> },
-      { path: "/entertainment", element: <UnderConstructionPage pageName="Entertainment" /> },
-      { path: "/accessories", element: <UnderConstructionPage pageName="Accessories" /> },
-      { path: "/support", element: <UnderConstructionPage pageName="Support" /> },
+      {
+        path: "/airpods",
+        element: <UnderConstructionPage pageName="AirPods" />,
+      },
+      {
+        path: "/entertainment",
+        element: <UnderConstructionPage pageName="Entertainment" />,
+      },
+      {
+        path: "/accessories",
+        element: <UnderConstructionPage pageName="Accessories" />,
+      },
+      {
+        path: "/support",
+        element: <UnderConstructionPage pageName="Support" />,
+      },
     ],
   },
 ]);
 
-
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />
   </StrictMode>

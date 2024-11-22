@@ -1,0 +1,27 @@
+.container{
+    background-color: #f5f5f7;
+}
+
+.sectionOne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f7;
+    background: url('https://www.apple.com/v/tv-home/n/images/overview/hero__dbphk49ymi2q_large.jpg');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 800px;
+    padding: 20px 30px 80px 30px;
+    position: relative;
+}
+
+.sectionOne .textContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+
+}

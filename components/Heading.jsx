@@ -4,6 +4,7 @@ import styles from './Heading.module.css';
 const Heading = ({ text, color = 'black', size = 'h1' }) => {
 
   const sizeClass = {
+    h0: styles['text-h0'], 
     h1: styles['text-h1'], 
     h2: styles['text-h2'],
     h3: styles['text-h3'],
