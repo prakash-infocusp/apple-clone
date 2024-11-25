@@ -1,6 +1,5 @@
-import React from "react";
-import Product from "../../components/Product";
-import Heading from "../../components/Heading";
+import Product from "../../../components/Product";
+import Heading from "../../../components/Heading";
 import styles from "./tv-home.module.css";
 
 const TVHOME = () => {

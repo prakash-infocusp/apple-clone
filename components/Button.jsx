@@ -1,15 +1,17 @@
-import React from 'react';
-import styles from './Button.module.css';
-
-const Button = ({ text, variant = 'primary', size = 'small', onClick }) => {
+import PropTypes from "prop-types";
+import styles from "./Button.module.css";
+const Button = ({ text, variant = "primary", size = "small" }) => {
   return (
-    <button
-      className={`${styles.button} ${styles[variant]} ${styles[size]}`}
-      onClick={onClick}
-    >
+    <button className={`${styles.button} ${styles[variant]} ${styles[size]}`}>
       {text}
     </button>
   );
+};
+
+Button.propTypes = {
+  text: PropTypes.string,
+  variant: PropTypes.oneOf(["primary", "secondary", "danger", "success"]),
+  size: PropTypes.oneOf(["small", "medium", "large"]),
 };
 
 export default Button;

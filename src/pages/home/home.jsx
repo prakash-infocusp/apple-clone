@@ -1,5 +1,5 @@
-import Heading from "../../components/Heading";
-import Button from "../../components/Button";
+import Heading from "../../../components/Heading";
+import Button from "../../../components/Button";
 import styles from "./home.module.css";
 
 function Home() {
@@ -186,7 +186,11 @@ function Home() {
             <Heading text="Brilliant" color="black" size="h2" />
             <div className={styles.buttonRow}>
               <div className={styles.buttonMargin}>
-                <Button text="Get your estimate" variant="primary" size="small" />
+                <Button
+                  text="Get your estimate"
+                  variant="primary"
+                  size="small"
+                />
               </div>
             </div>
           </div>

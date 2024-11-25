@@ -20,6 +20,7 @@
 .primary {
   background-color: #0071e3;
   color: white;
+  font-size : 10px
 }
 
 .primary:hover {

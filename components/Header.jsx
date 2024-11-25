@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
 import appleLogo from "./images/apple.png";
@@ -22,8 +21,8 @@ const Header = () => {
         isWhiteTheme
           ? styles["whiteTheme"]
           : isBlackTheme
-          ? styles["blackTheme"]
-          : ""
+            ? styles["blackTheme"]
+            : ""
       }`}
     >
       <nav className={styles.nav}>
@@ -69,8 +68,8 @@ const Header = () => {
             <Link to="/support">Support</Link>
           </li>
           <img
-              src={isWhiteTheme ? searchBlackLogo : search}
-              width={16}
+            src={isWhiteTheme ? searchBlackLogo : search}
+            width={16}
             height={16}
             alt="Logo"
             className={styles.logoImage}
