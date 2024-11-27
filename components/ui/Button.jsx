@@ -10,7 +10,7 @@ const Button = ({ text, variant = "primary", size = "small" }) => {
 
 Button.propTypes = {
   text: PropTypes.string,
-  variant: PropTypes.oneOf(["primary", "secondary", "danger", "success"]),
+  variant: PropTypes.oneOf(["primary", "secondary", "plain"]),
   size: PropTypes.oneOf(["small", "big"]),
 };
 

@@ -16,6 +16,12 @@
   font-size : 10px
 }
 
+.plain {
+  background-color:transparent;
+  color: #2997ff;
+  font-size : 10px
+}
+
 .primary:hover {
   background-color: #005bb5;
 }

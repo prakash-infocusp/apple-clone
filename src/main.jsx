@@ -7,6 +7,8 @@ import TVHOME from "./pages/tv-home/tv-home.jsx";
 import Header from "../components/layout/Header.jsx";
 import Footer from "../components/layout/Footer.jsx";
 import UnderConstructionPage from "./pages/under-construction/under-construction-page.jsx";
+import NotFound from "./pages/not-found/not-found.jsx";
+import User from "./pages/user/user.jsx";
 
 const Layout = () => (
   <>
@@ -46,8 +48,13 @@ const router = createBrowserRouter([
         path: "/support",
         element: <UnderConstructionPage pageName="Support" />,
       },
+      {
+        path: "/user/:username",
+        element: <User />,
+      },
     ],
   },
+  { path: "*", element: <NotFound /> },
 ]);
 
 createRoot(document.getElementById("root")).render(

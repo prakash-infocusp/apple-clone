@@ -16,7 +16,7 @@ function Home() {
           <Heading
             text="Built for Apple Intelligence."
             color="white"
-            size="h2"
+            size="h3"
           />
         </div>
         <div className={styles.buttonContainer}>
@@ -29,7 +29,7 @@ function Home() {
           <Heading
             text="Apple Intelligence available now in US English"
             color="grey"
-            size="h3"
+            size="h6"
           />
         </div>
       </div>
@@ -40,7 +40,7 @@ function Home() {
           <Heading
             text="Built for Apple Intelligence."
             color="white"
-            size="h2"
+            size="h3"
           />
         </div>
         <div className={styles.buttonContainer}>
@@ -53,7 +53,7 @@ function Home() {
           <Heading
             text="Apple Intelligence available now in US English"
             color="black"
-            size="h3"
+            size="h6"
           />
         </div>
       </div>
@@ -61,7 +61,7 @@ function Home() {
       <div className={styles.sectionThree}>
         <div className={styles.headingContainer}>
           <Heading text="MacBook Pro" color="white" size="h1" />
-          <Heading text="A work of smart." color="white" size="h2" />
+          <Heading text="A work of smart." color="white" size="h3" />
           <div className={styles.buttonRow}>
             <div className={styles.buttonMargin}>
               <Button text="Learn More" variant="primary" size="big" />
@@ -76,7 +76,7 @@ function Home() {
           <Heading
             text="Apple Intelligence available now in US English"
             color="grey"
-            size="h3"
+            size="h6"
           />
         </div>
       </div>
@@ -85,7 +85,7 @@ function Home() {
         <div className={styles.leftContainer}>
           <div className={styles.content}>
             <Heading text="iWatch" color="black" size="h1" />
-            <Heading text="Thinstant classic." color="black" size="h2" />
+            <Heading text="Thinstant classic." color="black" size="h3" />
             <div className={styles.buttonRow}>
               <div className={styles.buttonMargin}>
                 <Button text="Learn More" variant="primary" size="small" />
@@ -97,11 +97,11 @@ function Home() {
         <div className={styles.rightContainer}>
           <div className={styles.content}>
             <Heading text="AirPods 4" color="white" size="h1" />
-            <Heading text="Iconic. Now supersonic." color="white" size="h2" />
+            <Heading text="Iconic. Now supersonic." color="white" size="h3" />
             <Heading
               text="Available with Active Noise Cancellation."
               color="white"
-              size="h2"
+              size="h3"
             />
             <div className={styles.buttonRow}>
               <div className={styles.buttonMargin}>
@@ -117,7 +117,7 @@ function Home() {
         <div className={styles.leftContainer}>
           <div className={styles.content}>
             <Heading text="Mac mini" color="black" size="h1" />
-            <Heading text="Size down. Power up." color="black" size="h2" />
+            <Heading text="Size down. Power up." color="black" size="h3" />
             <div className={styles.buttonRow}>
               <div className={styles.buttonMargin}>
                 <Button text="Learn More" variant="primary" size="small" />
@@ -132,14 +132,14 @@ function Home() {
             <Heading
               text="Available now in US English"
               color="grey"
-              size="h3"
+              size="h6"
             />
           </div>
         </div>
         <div className={styles.rightContainer}>
           <div className={styles.content}>
             <Heading text="iMac" color="black" size="h1" />
-            <Heading text="Brilliant" color="black" size="h2" />
+            <Heading text="Brilliant" color="black" size="h3" />
             <div className={styles.buttonRow}>
               <div className={styles.buttonMargin}>
                 <Button text="Learn More" variant="primary" size="small" />
@@ -154,7 +154,7 @@ function Home() {
             <Heading
               text="Available now in US English"
               color="grey"
-              size="h3"
+              size="h6"
             />
           </div>
         </div>
@@ -164,7 +164,7 @@ function Home() {
         <div className={styles.leftContainer}>
           <div className={styles.content}>
             <Heading text="iPad mini" color="black" size="h1" />
-            <Heading text="Single-handedly awesome." color="black" size="h2" />
+            <Heading text="Single-handedly awesome." color="black" size="h3" />
             <div className={styles.buttonRow}>
               <div className={styles.buttonMargin}>
                 <Button text="Learn more" variant="primary" size="small" />
@@ -176,14 +176,14 @@ function Home() {
             <Heading
               text="Apple Intelligence available now in US English"
               color="grey"
-              size="h3"
+              size="h6"
             />
           </div>
         </div>
         <div className={styles.rightContainer}>
           <div className={styles.content}>
             <Heading text="Trade In" color="black" size="h1" />
-            <Heading text="Brilliant" color="black" size="h2" />
+            <Heading text="Brilliant" color="black" size="h3" />
             <div className={styles.buttonRow}>
               <div className={styles.buttonMargin}>
                 <Button
