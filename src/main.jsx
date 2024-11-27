@@ -2,12 +2,11 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-
-import Home from "./pages/home.jsx";
-import TVHOME from "./pages/tv-home";
-import Header from "../components/Header.jsx";
-import Footer from "../components/Footer.jsx";
-import UnderConstructionPage from "./pages/under-construction-page.jsx";
+import Home from "./pages/home/home.jsx";
+import TVHOME from "./pages/tv-home/tv-home.jsx";
+import Header from "../components/layout/Header.jsx";
+import Footer from "../components/layout/Footer.jsx";
+import UnderConstructionPage from "./pages/under-construction/under-construction-page.jsx";
 
 const Layout = () => (
   <>

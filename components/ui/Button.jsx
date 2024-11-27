@@ -11,7 +11,7 @@ const Button = ({ text, variant = "primary", size = "small" }) => {
 Button.propTypes = {
   text: PropTypes.string,
   variant: PropTypes.oneOf(["primary", "secondary", "danger", "success"]),
-  size: PropTypes.oneOf(["small", "medium", "large"]),
+  size: PropTypes.oneOf(["small", "big"]),
 };
 
 export default Button;

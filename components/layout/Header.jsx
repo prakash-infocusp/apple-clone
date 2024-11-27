@@ -1,9 +1,9 @@
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
-import appleLogo from "./images/apple.png";
-import appleBlackLogo from "./images/apple-black-logo.png";
-import searchBlackLogo from "./images/search-black.png";
-import search from "./images/search.png";
+import appleLogo from "../images/apple.png";
+import appleBlackLogo from "../images/apple-black-logo.png";
+import searchBlackLogo from "../images/search-black.png";
+import search from "../images/search.png";
 import { useLocation } from "react-router-dom";
 
 const Header = () => {

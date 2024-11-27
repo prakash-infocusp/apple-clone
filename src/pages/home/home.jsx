@@ -1,5 +1,5 @@
-import Heading from "../../../components/Heading";
-import Button from "../../../components/Button";
+import Heading from "../../../components/ui/Heading";
+import Button from "../../../components/ui/Button";
 import styles from "./home.module.css";
 
 function Home() {

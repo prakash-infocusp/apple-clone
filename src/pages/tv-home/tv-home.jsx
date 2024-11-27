@@ -1,5 +1,5 @@
 import Product from "../../../components/Product";
-import Heading from "../../../components/Heading";
+import Heading from "../../../components/ui/Heading";
 import styles from "./tv-home.module.css";
 
 const TVHOME = () => {
