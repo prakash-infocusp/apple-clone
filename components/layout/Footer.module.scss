@@ -1,14 +1,20 @@
+@import '../../styles/responsive';
+
 .footer {
   padding: 17px 0 11px;
   background-color: rgb(245, 245, 247);
   color: rgba(0, 0, 0, 0.56);
   padding: 10px;
   margin: 0 auto;
-  padding: 20px 200px;
+  padding: 10px;
+
+  @include respond-to($xlarge){
+    padding: 20px 200px;
+  }
 }
 
 .sectionOne {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.16);
 }
 
 .list {
@@ -32,7 +38,12 @@ a {
 
 .sectionTwo {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+
+  @include respond-to($xlarge){
+    flex-direction: row;
+  }
 }
 
 .menuList {
@@ -40,6 +51,12 @@ a {
   margin: 0;
   list-style: none;
   margin-bottom: 20px;
+  border-bottom: 1px solid grey;
+
+  @include respond-to($xlarge){
+    border-bottom: none;
+  }
+
 }
 
 .sectionTwo {
@@ -49,10 +66,27 @@ a {
 
 .menuItemHeading {
   color: rgb(0, 0, 0);
-  font-size: 13px;
-  display: block;
+  font-size: 12px;
+  display: flex;
+  font-weight: 500;
   pointer-events: auto;
   margin-bottom: 0.8em;
+  text-decoration: none !important;
+  justify-content: space-between;
+
+  @include respond-to($large){
+    font-size: 13px;
+
+  }
+
+}
+
+.chevronIcon{
+  display: flex;
+
+  @include respond-to($large){
+    display: none;
+  }
 }
 
 .menuItem {
@@ -92,6 +126,7 @@ a {
 .bottomLinks {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap; 
 }
 
 .bottomMenuItem,
@@ -101,12 +136,23 @@ a {
   pointer-events: auto;
   margin-bottom: 0.8em;
   color: rgba(0, 0, 0, 0.72);
-  margin: 0 3px;
+  margin: 5px 3px;
+
+
+  @include respond-to($large){
+    margin: 0 3px;
+
+   }
 }
 
 .leftContent {
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
+
+  @include respond-to($large){
+   flex-direction: row;
+  }
 }
 
 .copyrightText {

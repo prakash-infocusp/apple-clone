@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import styles from "./Heading.module.css";
+import styles from "./Heading.module.scss";
 
 const Heading = ({
   text,

@@ -1,0 +1,17 @@
+// breakpoints
+$small: 480px;
+$medium: 768px;
+$large: 1024px;
+$xlarge: 1440px;
+
+@mixin respond-to($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin respond-to-orientation($orientation) {
+  @media (orientation: $orientation) {
+    @content;
+  }
+}

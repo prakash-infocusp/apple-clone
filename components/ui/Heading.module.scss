@@ -1,3 +1,5 @@
+@import '../../styles/_responsive.scss';
+
 .text-h0 {
   font-size: 96px;
   line-height: 1.08349;
@@ -6,10 +8,14 @@
 }
 
 .text-h1 {
-  font-size: 48px;
+  font-size: 32px;
   line-height: 1.08349;
-  font-weight: 600;
   letter-spacing: -0.002em;
+  font-weight: 600;
+
+  @include respond-to($large){
+    font-size: 48px;
+  }
 }
 
 .text-h2 {
@@ -20,17 +26,25 @@
 }
 
 .text-h3 {
-  font-size: 24px;
+  font-size: 19px;
   line-height: 1.16667;
   font-weight: 400;
   letter-spacing: 0.009em;
+
+  @include respond-to($large){
+    font-size: 24px;
+  }
 }
 
 .text-h4 {
-  font-size: 21px;
+  font-size: 14px;
   line-height: 1.16667;
   font-weight: 400;
   letter-spacing: 0.009em;
+
+  @include respond-to($large){
+    font-size: 21px;
+  }
 }
 
 .text-h5 {
@@ -41,10 +55,14 @@
 }
 
 .text-h6 {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.28577;
   font-weight: 400;
   letter-spacing: -0.016em;
+
+  @include respond-to($large){
+    font-size: 14px;
+  }
 }
 
 .text-black {

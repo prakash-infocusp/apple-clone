@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
-import styles from "./Button.module.css";
+import styles from "./Button.module.scss";
+
 const Button = ({ text, variant = "primary", size = "small" }) => {
   return (
     <button className={`${styles.button} ${styles[variant]} ${styles[size]}`}>
