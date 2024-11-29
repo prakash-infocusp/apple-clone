@@ -208,15 +208,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 0px 120px;
+
 }
 
 .sectionSix button{
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 
-.sectionSix .tryFreeContainer {
+
+.sectionSix .productContainer , .sectionSix .infoContainer {
+  width: 100%;
   display: flex;
-  justify-content: center;
-  text-align: center;
+  justify-content: space-around;
+  margin-bottom: 100px;
 }

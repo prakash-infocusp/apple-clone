@@ -8,6 +8,9 @@ import { Link } from "react-router-dom";
 import arcade from "./images/arcade.png";
 import music from "./images/music.png";
 import tvPlus from "./images/tv-plus-logo.png";
+import delivery from "./images/delivery.svg";
+import rupee from "./images/rupee.svg";
+import chat from "./images/chat.svg";
 
 const TVHOME = () => {
   return (
@@ -255,8 +258,8 @@ const TVHOME = () => {
         </div>
 
         <div className={styles.sectionSix}>
-          <div className={styles.tryFreeContainer}>
-            <div className={styles.Product}>
+          <div className={styles.productContainer}>
+            <div className={styles.product}>
               <img src={tvPlus} alt="tv plus logo" />
               <div className={styles.margin}></div>
               <Heading
@@ -282,8 +285,163 @@ const TVHOME = () => {
                 />
               </Link>
             </div>
+            <div className={styles.product}>
+              <img src={music} alt="tv plus logo" />
+              <div className={styles.margin}></div>
+              <Heading
+                text="Access all your favourite songs"
+                colo="black"
+                weight="semi"
+                size="h4"
+              />
+              <Heading
+                text="and sing along with lyrics view."
+                colo="black"
+                weight="semi"
+                size="h4"
+              />
+
+              <Button text="Try it free" variant="primary" size="big" />
+              <Link to={"/"}>
+                <Heading
+                  text="Learn more >"
+                  color="blue"
+                  weight="semi"
+                  size="h5"
+                />
+              </Link>
+            </div>
+            <div className={styles.product}>
+              <img src={arcade} alt="tv plus logo" />
+              <div className={styles.margin}></div>
+              <Heading
+                text="Over 200 incredibly fun games."
+                colo="black"
+                weight="bold"
+                size="h5"
+              />
+              <Heading
+                text="No ads. No in-app purchases."
+                colo="black"
+                weight="semi"
+                size="h4"
+              />
+
+              <Button text="Try it free" variant="primary" size="big" />
+              <Link to={"/"}>
+                <Heading
+                  text="Learn more >"
+                  color="blue"
+                  weight="semi"
+                  size="h5"
+                />
+              </Link>
+            </div>
           </div>
-          <div className={styles.infoContainer}></div>
+          <div className={styles.infoContainer}>
+            <div className={styles.info}>
+              <img src={delivery} alt="tv plus logo" width={50} />
+              <Heading
+                text="Free delivery and pickup"
+                colo="black"
+                weight="bold"
+                size="h4"
+              />
+              <div className={styles.margin}></div>
+              <Heading
+                text="Get free delivery or pickup"
+                colo="black"
+                weight="semi"
+                size="h6"
+              />
+              <Heading
+                text="at your Apple Store."
+                colo="black"
+                weight="semi"
+                size="h6"
+              />{" "}
+              <div className={styles.margin}></div>
+              <Link to={"/"}>
+                <Heading
+                  text="Learn more >"
+                  color="blue"
+                  weight="semi"
+                  size="h6"
+                />
+              </Link>
+            </div>
+
+            <div className={styles.info}>
+              <img src={rupee} alt="tv plus logo" width={50} />
+              <Heading
+                text="Ways to buy"
+                colo="black"
+                weight="bold"
+                size="h5"
+              />
+              <div className={styles.margin}></div>
+              <Heading
+                text="Choose the way that′s"
+                colo="black"
+                weight="semi"
+                size="h6"
+              />
+              <Heading
+                text="right for you."
+                colo="black"
+                weight="semi"
+                size="h6"
+              />{" "}
+              <div className={styles.margin}></div>
+              <Link to={"/"}>
+                <Heading
+                  text="Learn more >"
+                  color="blue"
+                  weight="semi"
+                  size="h6"
+                />
+              </Link>
+            </div>
+
+            <div className={styles.info}>
+              <img src={chat} alt="tv plus logo" width={50} />
+              <Heading
+                text="Get help buying"
+                colo="black"
+                weight="bold"
+                size="h5"
+              />
+              <div className={styles.margin}></div>
+              <Heading
+                text="Have a question? Call a Specialist"
+                colo="black"
+                weight="semi"
+                size="h6"
+              />
+              <Heading
+                text=" or chat online."
+                colo="black"
+                weight="semi"
+                size="h6"
+              />
+              <Heading
+                text="Call 000800 040 1966."
+                colo="black"
+                weight="semi"
+                size="h6"
+              />
+
+              <div className={styles.margin}></div>
+              <Link to={"/"}>
+                <Heading
+                  text="Learn more >"
+                  color="blue"
+                  weight="semi"
+                  size="h6"
+                />
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </>
