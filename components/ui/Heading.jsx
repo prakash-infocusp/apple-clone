@@ -21,6 +21,7 @@ const Heading = ({
     black: styles["text-black"],
     grey: styles["text-grey"],
     white: styles["text-white"],
+    blue :styles["text-blue"]
   };
 
   const weightClass = {
@@ -43,7 +44,7 @@ const Heading = ({
 
 Heading.propTypes = {
   text: PropTypes.string.isRequired,
-  color: PropTypes.oneOf(["black", "grey", "white"]),
+  color: PropTypes.oneOf(["black", "grey", "white","blue"]),
   size: PropTypes.oneOf(["h0", "h1", "h2", "h3", "h4", "h5", "h6"]),
   weight: PropTypes.oneOf([
     "font-weight-400",
