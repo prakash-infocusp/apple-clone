@@ -1,9 +1,8 @@
 import styles from "./Header.module.scss";
-import appleLogo from "../images/apple.png";
-import searchIcon from "../images/search.png";
-import hamburgerIcon from "../images/hamburger.png";
-import closeIcon from "../images/close.png";
+import { appleLogo, searchIcon, hamburgerIcon, closeIcon } from "../index";
+
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const MobileHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +15,9 @@ const MobileHeader = () => {
     <>
       <header className={styles.mobileHeader}>
         <div className={styles.headerContainer}>
-          <img src={appleLogo} alt="Apple Logo" className={styles.logo} />
+          <Link to="/">
+            <img src={appleLogo} alt="Apple Logo" className={styles.logo} />
+          </Link>
 
           <div className={styles.rightIcons}>
             <img src={searchIcon} alt="Search Icon" className={styles.icon} />
@@ -40,34 +41,55 @@ const MobileHeader = () => {
           <nav className={styles.nav}>
             <ul className={styles.navList}>
               <li className={styles.navItem}>
-                <a href="/store">Store</a>
+                <Link onClick={toggleMenu} to="/store">
+                  Store
+                </Link>
               </li>
               <li className={styles.navItem}>
-                <a href="/mac">Mac</a>
+                <Link onClick={toggleMenu} to="/mac">
+                  Mac
+                </Link>
               </li>
               <li className={styles.navItem}>
-                <a href="/ipad">iPad</a>
+                <Link onClick={toggleMenu} to="/ipad">
+                  iPad
+                </Link>
               </li>
               <li className={styles.navItem}>
-                <a href="/iphone">iPhone</a>
+                <Link onClick={toggleMenu} to="/iphone">
+                  iPhone
+                </Link>
               </li>
               <li className={styles.navItem}>
-                <a href="/watch">Watch</a>
+                <Link onClick={toggleMenu} to="/watch">
+                  Watch
+                </Link>
               </li>
               <li className={styles.navItem}>
-                <a href="/airpods">AirPods</a>
+                <Link onClick={toggleMenu} to="/airpods">
+                  AirPods
+                </Link>
+              </li>
+
+              <li className={styles.navItem}>
+                <Link onClick={toggleMenu} to="/tv-home">
+                  TV & Home
+                </Link>
               </li>
               <li className={styles.navItem}>
-                <a href="/tv-home">TV & Home</a>
+                <Link onClick={toggleMenu} to="/entertainment">
+                  Entertainment
+                </Link>
               </li>
               <li className={styles.navItem}>
-                <a href="/entertainment">Entertainment</a>
+                <Link onClick={toggleMenu} to="/accessories">
+                  Accessories
+                </Link>
               </li>
               <li className={styles.navItem}>
-                <a href="/accessories">Accessories</a>
-              </li>
-              <li className={styles.navItem}>
-                <a href="/support">Support</a>
+                <Link onClick={toggleMenu} to="/support">
+                  Support
+                </Link>
               </li>
             </ul>
           </nav>

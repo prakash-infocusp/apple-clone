@@ -9,6 +9,7 @@ const User = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    // replace with useloader of react router
     const fetchGitHubUser = async () => {
       try {
         const response = await fetch(

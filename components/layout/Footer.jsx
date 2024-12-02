@@ -1,8 +1,5 @@
 import styles from "./Footer.module.scss";
-
-import ChevronDown from "../images/chevron-down.png";
-import ChevronUp from "../images/chevron-up.png";
-
+import { ChevronDown, ChevronUp } from "../index";
 import { useState } from "react";
 
 let Footer = () => {

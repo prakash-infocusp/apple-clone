@@ -1,11 +1,13 @@
-import styles from "./Product.module.css";
-import productOne from "./images/product-one.svg";
-import productTwo from "./images/product-two.svg";
-import productThree from "./images/product-three.svg";
-import productFour from "./images/product-four.svg";
-import productFive from "./images/product-five.svg";
-import productSix from "./images/product-six.svg";
-import productSeven from "./images/product-seven.svg";
+import styles from "./Product.module.scss";
+import {
+  productOne,
+  productTwo,
+  productThree,
+  productFour,
+  productFive,
+  productSix,
+  productSeven,
+} from ".";
 
 const Product = () => {
   return (

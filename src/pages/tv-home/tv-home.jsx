@@ -1,16 +1,9 @@
 import Product from "../../../components/Product";
 import Heading from "../../../components/ui/Heading";
-import styles from "./tv-home.module.css";
+import styles from "./tv-home.module.scss";
 import Button from "../../../components/ui/Button";
-import tvImage from "../../../components/images/tv.png";
-import home from "../../../components/images/home.png";
 import { Link } from "react-router-dom";
-import arcade from "./images/arcade.png";
-import music from "./images/music.png";
-import tvPlus from "./images/tv-plus-logo.png";
-import delivery from "./images/delivery.svg";
-import rupee from "./images/rupee.svg";
-import chat from "./images/chat.svg";
+import { arcade, music, tvPlus, delivery, rupee, chat, tvImage, home } from ".";
 
 const TVHOME = () => {
   return (
@@ -275,15 +268,17 @@ const TVHOME = () => {
                 size="h4"
               />
 
-              <Button text="Try it free" variant="primary" size="big" />
-              <Link to={"/"}>
-                <Heading
-                  text="Learn more >"
-                  color="blue"
-                  weight="semi"
-                  size="h5"
-                />
-              </Link>
+              <div className={styles.buttonContainer}>
+                <Button text="Try it free" variant="primary" size="big" />
+                <Link to={"/"}>
+                  <Heading
+                    text="Learn more >"
+                    color="blue"
+                    weight="semi"
+                    size="h5"
+                  />
+                </Link>
+              </div>
             </div>
             <div className={styles.product}>
               <img src={music} alt="tv plus logo" />
@@ -301,15 +296,17 @@ const TVHOME = () => {
                 size="h4"
               />
 
-              <Button text="Try it free" variant="primary" size="big" />
-              <Link to={"/"}>
-                <Heading
-                  text="Learn more >"
-                  color="blue"
-                  weight="semi"
-                  size="h5"
-                />
-              </Link>
+              <div className={styles.buttonContainer}>
+                <Button text="Try it free" variant="primary" size="big" />
+                <Link to={"/"}>
+                  <Heading
+                    text="Learn more >"
+                    color="blue"
+                    weight="semi"
+                    size="h5"
+                  />
+                </Link>
+              </div>
             </div>
             <div className={styles.product}>
               <img src={arcade} alt="tv plus logo" />
@@ -317,7 +314,7 @@ const TVHOME = () => {
               <Heading
                 text="Over 200 incredibly fun games."
                 colo="black"
-                weight="bold"
+                weight="semi"
                 size="h5"
               />
               <Heading
@@ -327,15 +324,17 @@ const TVHOME = () => {
                 size="h4"
               />
 
-              <Button text="Try it free" variant="primary" size="big" />
-              <Link to={"/"}>
-                <Heading
-                  text="Learn more >"
-                  color="blue"
-                  weight="semi"
-                  size="h5"
-                />
-              </Link>
+              <div className={styles.buttonContainer}>
+                <Button text="Try it free" variant="primary" size="big" />
+                <Link to={"/"}>
+                  <Heading
+                    text="Learn more >"
+                    color="blue"
+                    weight="semi"
+                    size="h5"
+                  />
+                </Link>
+              </div>
             </div>
           </div>
           <div className={styles.infoContainer}>
@@ -345,7 +344,7 @@ const TVHOME = () => {
                 text="Free delivery and pickup"
                 colo="black"
                 weight="bold"
-                size="h4"
+                size="h5"
               />
               <div className={styles.margin}></div>
               <Heading
